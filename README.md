@@ -15,3 +15,6 @@
 If you have systemd and want to enable the script as soon as you log in, run `systemctl --user enable micmute_listener_pa.service`.
 
 To start the service immediately, run `systemctl --user start micmute_listener_pa.service`.
+
+## Contributions
+I'm very intrested in your opinions in terms of the architecture of this service. If you have suggestions on how to avoid SETUID or make the whole thing cleaner or more secure, please start a discussion!
