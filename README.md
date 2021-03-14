@@ -9,12 +9,17 @@
 
 ## Installation
 1. Make sure `BRIGHTNESS_FILE_PATH` in set_micmute_led.c corresponds to the LED file path on your system.
-2. Run `./install.sh`
+2. Make sure `mic_name` in micmute_listener_pa.py corresponds to your mic device name. This name can be found within the sources printed out when the client is started. (This will be made more user-friendly with upcoming releases)
+3. Run `./install.sh`
 
 ## Running
-If you have systemd and want to enable the script as soon as you log in, run `systemctl --user enable micmute_listener_pa.service`.
 
+### With systemd
+If you want to enable the script as soon as you log in, run `systemctl --user enable micmute_listener_pa.service`.
 To start the service immediately, run `systemctl --user start micmute_listener_pa.service`.
+
+### Without systemd
+Simply run `~/.local/bin/micmute_listener_pa.py &` after installation. For starting the client at boot, look up your distro's individual way to achieve this.
 
 ## Contributions
 I'm very intrested in your opinions in terms of the architecture of this service. If you have suggestions on how to avoid SETUID or make the whole thing cleaner or more secure, please start a discussion!
