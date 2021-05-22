@@ -1,5 +1,5 @@
 # Micmute LED service for pulseaudio (WORK IN PROGRESS)
-## Tested on a Huawei matebook 14 AMD 2020 on Kubuntu 20.10
+## Tested on a Huawei matebook 14 AMD 2020 on Kubuntu 20.10 and 21.04
 
 ## Prerequisites
 1. python3
